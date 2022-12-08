@@ -1,0 +1,21 @@
+<div class="hexagons-container">
+  <a href="/home" class="hexagon-container hex generic">
+    <p>Go home</p>
+  </a>
+  <div class="page-home-container">
+    <div class="hexagons-container">
+      <a
+        [href]="project.link"
+        *ngFor="let project of projects"
+        class="hexagon-container hex generic"
+      >
+        <p>{{ project.title }}</p>
+        <img
+          style="height: 50px"
+          [src]="project.image"
+          [alt]="project.image_alt"
+        />
+      </a>
+    </div>
+  </div>
+</div>

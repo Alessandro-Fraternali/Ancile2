@@ -1,0 +1,11 @@
+<div class="page-home-container">
+  <div class="hexagons-container">
+    <a
+      [href]="hexagon.link"
+      *ngFor="let hexagon of hexagons"
+      class="hexagon-container hex generic"
+    >
+      <p>{{ hexagon.title }}</p>
+    </a>
+  </div>
+</div>
